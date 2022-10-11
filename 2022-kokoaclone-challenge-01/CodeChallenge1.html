@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lan="kr">
+  <head>
+    <title>D3 과제 - FORM</title>
+  </head>
+
+  <body>
+    <h1>Create An Account</h1>
+
+    <form>
+      <div>
+        <label for="First name">First name</label>
+        <input
+          required
+          id="First name"
+          placeholder="First name"
+          name="First name"
+          type="text"
+        />
+      </div>
+      <div>
+        <label for="Last name">Last name</label>
+        <input
+          required
+          id="Last name"
+          placeholder="Last name"
+          name="Last name"
+          type="text"
+        />
+      </div>
+      <div>
+        <label for="Emal">Email</label>
+        <input
+          required
+          id="Email"
+          placeholder="Email"
+          name="Email"
+          type="email"
+        />
+      </div>
+      <div>
+        <label for="Username">Username</label>
+        <input
+          required
+          id="Username"
+          placeholder="Username"
+          name="Username"
+          type="text"
+        />
+      </div>
+      <div>
+        <label for="Password">Password</label>
+        <input
+          required
+          id="Password"
+          placeholder="Password"
+          name="Password"
+          type="password"
+          minlength="10"
+        />
+      </div>
+      <div>
+        <label for="Birth date">Birth date</label>
+        <input
+          required
+          id="Birth date"
+          placeholder="yyyy/mm/dd"
+          name="Birth date"
+          type="date"
+        />
+      </div>
+      <div>
+        <label for="How happy are you?">How happy are you?</label>
+        <input
+          required
+          id="How happy are you?"
+          placeholder="How happy are you?"
+          name="How happy are you?"
+          type="range"
+          list="tickmarks"
+        />
+        <datalist id="tickmarks">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="What is your fav. color?">What is your fav. color?</label>
+        <input
+          required
+          id="What is your fav. color?"
+          placeholder="What is your fav. color?"
+          name="What is your fav. color?"
+          type="color"
+        />
+      </div>
+      <div>
+        <input type="submit" value="Create Account" />
+      </div>
+    </form>
+  </body>
+</html>

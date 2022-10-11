@@ -1,0 +1,349 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.playlist-screen,
+.player-screen {
+  background-color: white;
+  margin: 10px 20px;
+  padding: 50px 20px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 320px;
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+.indepth-header-component {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  z-index: 3;
+  background-color: white;
+}
+
+.playlist-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 15px;
+}
+
+.playlist-header__image {
+  margin-bottom: 30px;
+}
+
+.playlist-header__image img {
+  width: 100px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px);
+  /* box-shadow: 0px 20px 50px; */
+}
+
+.playlist-header__musician {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.playlist-header__genre {
+  font-size: 17 px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.playlist-header__btns {
+  display: flex;
+  justify-content: center;
+}
+
+.playlist-header__btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  font-size: 15px;
+}
+
+.playlist-header__btn:first-child {
+  background-color: black;
+  color: white;
+}
+
+.playlist-header__btn:last-child {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.05);
+}
+
+.playlist-header__btn:last-child span {
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+.playlist-list {
+  list-style: none;
+  width: 320px;
+  height: 30vh;
+  padding: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.playlist-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.playlist-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px;
+  padding: 12px 15px;
+}
+
+.playlist-list__column:first-child {
+  display: flex;
+}
+
+.playlist-list__image {
+  position: relative;
+}
+
+.playlist-list__image img {
+  width: 50px;
+  border-radius: 10px;
+}
+
+@keyframes playing-icon-ani {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: scaleY(1.5);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.playing-icon {
+  width: 20px;
+  height: 50px;
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  display: none;
+}
+
+.playing-icon div {
+  width: 4px;
+  height: 10px;
+  background-color: white;
+  margin: 5px 1px;
+  animation: playing-icon-ani 1s ease-in-out infinite;
+}
+
+.playing-icon div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.playing-icon div:last-child {
+  animation-delay: 0.4s;
+}
+
+.playlist-list__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.playlist-list__musician {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+
+.playlist-list__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.playlist-list__column:last-child i {
+  opacity: 0.5;
+}
+
+.playing-song {
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.08);
+}
+
+.playing-song .playing-icon {
+  display: flex;
+}
+
+.mini-player-component {
+  background-color: black;
+  border-radius: 50px;
+  width: 320px;
+  height: 75px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  z-index: 2;
+}
+
+.mini-player-component__column:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.mini-player-component__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+.mini-player-component__column:last-child i {
+  margin: 0px 15px;
+}
+
+.mini-player-component__musician {
+  font-size: 12 px;
+  opacity: 0.5;
+  margin-bottom: 5px;
+}
+
+.mini-player-component__title {
+  font-size: 13 px;
+}
+
+.player-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 70px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.player-main::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.player__cover {
+  margin-bottom: 40px;
+}
+
+.player__cover img {
+  width: 260px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.3));
+  /* box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3); */
+}
+
+.player__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.player__musician {
+  margin-bottom: 150px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.player__slider {
+  margin-bottom: 50px;
+}
+
+.player__slider-column:first-child {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+.player-slider-bar {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 300px;
+  height: 5px;
+  border-radius: 8px;
+  background: black;
+  outline: none;
+}
+
+/* Chrome, Opera, Safari, Edge  */
+.player-slider-bar::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Firefox */
+.player-slider-bar::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+
+.player__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player__btns i:first-child,
+.player__btns i:last-child {
+  opacity: 0.5;
+}
+
+.player-absolute-area {
+  position: absolute;
+  bottom: 20px;
+  background-color: white;
+  z-index: 2;
+}

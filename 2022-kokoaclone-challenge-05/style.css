@@ -1,0 +1,140 @@
+body {
+  background-color: #00c6ad;
+  margin: 0px;
+  padding: 5px;
+}
+
+.playlist {
+  height: 100%;
+  width: inherit;
+  padding: 80px 30px 20px;
+  background-color: white;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.popup-header__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.playlist-header {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.playlist-header__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: #ffbc11;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-header__column:nth-child(2) {
+  padding-left: 25px;
+}
+
+.playlist-header__title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.playlist-header__maker {
+  font-size: 22px;
+}
+
+.playlist-btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playlist-btn__wide,
+.playlist-btn__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlist-btn__wide {
+  width: 200px;
+  height: 65px;
+  margin-right: 10px;
+  border: 3px solid black;
+  border-bottom: 8px solid;
+  border-radius: 20px;
+}
+
+.playlist-btn__wide span {
+  font-size: 27px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.playlist-btn__circle {
+  margin: 0px 10px;
+  height: 65px;
+  width: 65px;
+  border: 3px solid black;
+  border-bottom: 8px solid;
+  border-radius: 50%;
+}
+
+.playlist-items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.playlist-item {
+  display: flex;
+  margin: 30px 0px;
+}
+.playlist-item__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-image-1 {
+  background-color: #f85a2b;
+}
+
+.item-image-2 {
+  background-color: #ff89bb;
+}
+
+.item-image-3 {
+  background-color: #1947e5;
+}
+
+.item-image-4 {
+  background-color: #00c6ad;
+}
+
+.playlist-item__title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.playlist-item__musician {
+  font-size: 18px;
+}
+
+.playlist-item__column:nth-child(2) {
+  padding-left: 15px;
+}

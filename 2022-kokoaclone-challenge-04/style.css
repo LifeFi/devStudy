@@ -1,0 +1,144 @@
+@keyframes progress-bar1-ani {
+    0% {
+        transform: rotatez(0deg);
+    }
+    50% {
+        transform: rotatez(180deg);
+    }
+    100% {
+        transform: rotatez(180deg);
+    }
+
+}
+
+@keyframes progress-bar2-ani-components1 {
+    0% {
+        transform: scaley(1);
+    }
+    20% {
+        transform: scaley(2);
+    }
+    40% {
+        transform: scaley(1);
+    } 
+
+}
+
+@keyframes progress-bar2-ani-components2 {
+    10% {
+        transform: scaley(1);
+    }
+    30% {
+        transform: scaley(2);
+    }
+    50% {
+        transform: scaley(1);
+    } 
+
+}
+
+@keyframes progress-bar2-ani-components3 {
+    20% {
+        transform: scaley(1);
+    }
+    40% {
+        transform: scaley(2);
+    }
+    60% {
+        transform: scaley(1);
+    } 
+
+}
+
+@keyframes progress-bar2-ani-components4 {
+    30% {
+        transform: scaley(1);
+    }
+    50% {
+        transform: scaley(2);
+    }
+    70% {
+        transform: scaley(1);
+    } 
+
+}
+
+@keyframes progress-bar2-ani-components5 {
+    40% {
+        transform: scaley(1);
+    }
+    60% {
+        transform: scaley(2);
+    }
+    80% {
+        transform: scaley(1);
+    } 
+
+}
+
+
+
+
+
+body {
+    height: 100vh;
+    background-color: #6BBCBE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.progress-bar1,
+.progress-bar2 {
+    width: 75px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar1 {
+    animation: progress-bar1-ani 1s ease-in-out infinite;
+}
+
+
+.progress-bar1__components {
+       width: 10px;
+       height: 10px;
+       border-radius: 5px;
+       background-color: white;
+
+}
+
+.progress-bar2__components {
+    width: 10px;
+    height: 50px;
+    background-color: white;
+  
+
+}
+
+.progress-bar2__components1 {
+    animation: progress-bar2-ani-components1 1s ease-in-out infinite;
+    
+}
+
+.progress-bar2__components2 {
+    animation: progress-bar2-ani-components2 1s ease-in-out infinite;
+    
+}
+.progress-bar2__components3 {
+    animation: progress-bar2-ani-components3 1s ease-in-out infinite;
+    
+}
+.progress-bar2__components4 {
+    animation: progress-bar2-ani-components4 1s ease-in-out infinite;
+    
+}
+.progress-bar2__components5 {
+    animation: progress-bar2-ani-components5 1s ease-in-out infinite;
+    
+}
+
+
