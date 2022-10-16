@@ -1,0 +1,9 @@
+#number-game {
+  display: flex;
+  flex-direction: column;
+}
+
+#number-game span:last-of-type {
+  font-weight: 600;
+  font-size: 20px;
+}
