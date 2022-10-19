@@ -14,7 +14,7 @@ function getDateDiff(startDate, targetDate) {
     let remainHours = parseInt(remainMinutes / 60);
     remainMinutes = remainMinutes % 60;
     let remainDays = parseInt(remainHours / 24);
-    remainHours = remainHours % 60;
+    remainHours = remainHours % 24;
 
     remainSeconds = String(remainSeconds).padStart(2, "0");
     remainMinutes = String(remainMinutes).padStart(2, "0");
@@ -23,7 +23,7 @@ function getDateDiff(startDate, targetDate) {
 
     clock.innerText = `${remainDays}d ${remainHours}h ${remainMinutes}m ${remainSeconds}s`;
 
-    return console.log(`${diffTime}`);
+    return `${diffTime}`;
   }
 }
 setInterval(() => getDateDiff(new Date(), "2022-12-25"), 1000);
